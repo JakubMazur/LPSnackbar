@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LPSnackbar"
-  s.version      = "4.0.0"
+  s.version      = "4.0.1"
   s.swift_version = "5.3"
   s.summary      = "A flexible and easy to use Snackbar control for iOS."
 
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   Flexible and customizable Android inspired Snackbar control for iOS devices.
                    DESC
 
-  s.homepage     = "https://github.com/luispadron/LPSnackbar"
+  s.homepage     = "https://github.com/JakubMazur/LPSnackbar"
   s.screenshots  = "https://raw.githubusercontent.com/luispadron/LPSnackbar/master/.github/Screen1.png"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "12.0"
 
-  s.source       = { :git => "https://github.com/luispadron/LPSnackbar.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/JakubMazur/LPSnackbar.git", :tag => "v#{s.version}" }
 
-  s.source_files  = "src/LPSnackbar", "src/LPSnackbar/**/*.{h,m}"
+  s.source_files  = "Sources/LPSnackbar", "Sources/LPSnackbar/**/*.{h,m}"
 end
