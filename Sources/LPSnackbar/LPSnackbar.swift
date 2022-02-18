@@ -390,7 +390,8 @@ open class LPSnackbar: Equatable {
      */
     open func show(displayDuration: TimeInterval? = 5.0, animated: Bool = true, completion: SnackbarCompletion? = nil) {
         guard let superview = viewToDisplayIn ?? UIApplication.shared.keyWindow ?? nil else {
-            fatalError("Unable to get a superview, was not able to show\n Couldn't add LPSnackbarView as a subview to the main UIWindow")
+			NSLog("%@", "Unable to get a superview, was not able to show\n Couldn't add LPSnackbarView as a subview to the main UIWindow")
+			return
         }
 
         // Add as subview
